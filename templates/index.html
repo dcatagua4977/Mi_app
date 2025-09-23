@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descargar Música de Spotify</title>
+    <link rel="icon" href="static/img/Logo_sps.png" type="image/x-icon" />
+    <!-- Enlace al favicon -->
+    <link rel="stylesheet" href="static/css/estilo1.css" />
+    <link rel="stylesheet" href="static/css/estilo_barra.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="static/css/tema.css" />
+  </head>
+  <body class="dark-theme">
+    <header>
+      <div class="titulo">
+        <h1>Descargar Música de Spotify</h1>
+      </div>
+      <div class="url_spotify">
+        <a href="https://Spotify.com" target="_blank"><b>Ir a Spotify</b></a>
+        <img src="static/img/spotify.png" alt="spotify" />
+      </div>
+      <button id="theme-toggle">Alternar Tema</button>
+    </header>
+
+    <div class="log_spotSound">
+      <img
+        id="sps"
+        src="static/img/logo2-removebg-preview.png"
+        alt="SpotSound"
+      />
+      <h2><b>SpotSound</b></h2>
+    </div>
+
+    <main>
+      <div class="contenedor">
+        <form id="download-form">
+          <input
+            type="text"
+            id="url"
+            placeholder="Ingrese el enlace de Spotify"
+            required
+          />
+          <div class="directorio">
+            <input
+              type="text"
+              id="output_directory"
+              placeholder="Directorio de salida"
+              readonly
+            />
+            <button type="button" id="browse-button">
+              Seleccionar Carpeta
+            </button>
+            <div id="spinner" class="spinner hidden"></div>
+          </div>
+          <button id="btn" type="submit">Descargar</button>
+        </form>
+      </div>
+
+      <!-- Sección de previsualización de metadatos y reproducción -->
+      <div id="metadata-preview" class="metadata-preview animate__animated">
+        <div><img id="song-cover" alt="Portada de la canción" /></div>
+        <p id="track-title"></p>
+        <p id="track-artist"></p>
+        <p id="track-duration"></p>
+
+        <!-- Reproductor de audio con controles -->
+        <audio id="audio-player" controls preload="none">
+          <source id="previewSource" src="" type="audio/mpeg" />
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </div>
+
+      <!-- Barra de progreso para la descarga -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <p id="progress-text" style="text-align: center; font-weight: bold"></p>
+      <p id="estimated-time" class="estimated-time"></p>
+
+      <div id="message"></div>
+      <div id="download-link" style="display: none">
+        <a id="download-anchor" href="#" download></a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="derechos">
+        <p>Todos los derechos reservados <span>Copyright Dario Prod..</span></p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="static/js/mostrar_titulo.js"></script>
+    <script src="static/js/tema.js"></script>
+  </body>
+</html>

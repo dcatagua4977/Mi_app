@@ -1,0 +1,184 @@
+/* Estilo general para la página */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #390c74;
+  top: 0;
+  color: rgb(255, 255, 255);
+}
+
+/* titulo de la pagina */
+.titulo {
+  color: rgb(255, 255, 255);
+}
+
+.titulo h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  margin: 40px;
+}
+
+/* Estilo del link de spotify */
+.log_spotSound {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: flex-end; /* Opcional, para moverlos a la derecha */
+  float: right;
+  margin: 0 20px;
+  position: fixed;
+}
+
+.log_spotSound #sps {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px; /* Espaciado entre el logo y el texto */
+  padding: 0; /* Elimina el padding para evitar separación innecesaria */
+  float: right;
+}
+
+.url_spotify h2 {
+  position: relative;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.url_spotify a {
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 25px;
+  position: absolute;
+  top: 0;
+}
+
+.url_spotify img {
+  width: 25px;
+  height: 25px;
+  top: 0;
+  position: absolute;
+  margin-left: -25px;
+  padding: 35px;
+}
+
+.url_spotify a:hover {
+  color: rgb(125, 69, 161);
+}
+
+#song-cover {
+  width: 200px; /* Ajusta el tamaño según lo desees */
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Contenedor centrado */
+.contenedor {
+  margin: 0 auto;
+  margin-top: 150px;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Estilo para el label */
+.contenedor label {
+  font-size: 1.2em;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el input */
+#url {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+/* Efecto al enfocar el input */
+#url:focus {
+  border-color: #390c74;
+  outline: none;
+}
+
+/* Estilo para el botón */
+
+#browse-button #button-text {
+  position: relative;
+  padding-right: 40px; /* espacio para el spinner */
+  min-width: 140px;
+  height: 40px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+.contenedor #browse-button {
+  background-color: #390c74;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenedor #btn {
+  margin: 20px;
+  background-color: #390c74;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+
+#btn:hover {
+  background-color: #1a61a3;
+}
+
+#browse-button:hover {
+  background-color: #1a61a3;
+}
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 20px;
+  }
+
+  label {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,65 @@
+/* Tema oscuro */
+body.dark-theme {
+    background-color: #191414; /* Fondo oscuro */
+    color: white; /* Texto claro */
+    
+}
+
+/* COLOR SPAN*/
+body.dark-theme .derechos span {
+    color: white;
+}
+
+body.light-theme {
+    background-color: white; /* Fondo claro */
+    color: #080808; /* Texto oscuro */
+}
+
+body.light-theme .contenedor {
+    border-style: groove;
+}
+
+/* COLOR SPAN MODO CLARO*/
+body.light-theme .derechos p, span {
+    color: black;
+}
+
+/* Estilo del botón */
+button#theme-toggle {
+    position: fixed;
+    top: 30px;
+    right: 25px;
+    padding: 15px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button#theme-toggle.light-mode {
+    background-color: #333; /* Oscuro para el tema claro */
+    color: white;
+}
+
+button#theme-toggle.dark-mode {
+    background-color: white; /* Claro para el tema oscuro */
+    color: #333;
+}
+
+button#theme-toggle:hover {
+    opacity: 0.8;
+}
+
+
+/* Animaciones */
+.metadata-preview {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.metadata-preview.visible {
+    display: block;
+}

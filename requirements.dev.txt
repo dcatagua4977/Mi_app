@@ -1,9 +1,10 @@
-Flask==2.3.3
+Flask==3.0.3
 gunicorn==21.2.0
-spotipy==2.23.0
-requests==2.31.0
-urllib3==1.26.18
+spotipy==2.24.0
+requests==2.32.3
+urllib3==2.2.3
 pandas==2.0.3
 numpy==1.24.3
+
 
 
